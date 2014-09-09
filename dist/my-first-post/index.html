@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Tech blog</title><link rel="stylesheet" href="/styles/667cf70bf062/main.css" /></head><body><div class="logo">projectcation</div><div class="body"><h1>My first post</h1><p>It's pretty short for now. Here's our project.clj:</p><p><a href="/about/">Relative to about</a></p>
+<pre><code class="codehilite"><span class="p">(</span><span class="kd">defproject </span><span class="nv">projectcation</span> <span class="s">"0.1.0-SNAPSHOT"</span>
+  <span class="ss">:description</span> <span class="s">"source for projectcation"</span>
+  <span class="ss">:url</span> <span class="s">"http://projectcation.com"</span>
+  <span class="ss">:license</span> <span class="p">{</span><span class="ss">:name</span> <span class="s">"Eclipse Public License"</span>
+            <span class="ss">:url</span> <span class="s">"http://www.eclipse.org/legal/epl-v10.html"</span><span class="p">}</span>
+  <span class="ss">:dependencies</span> <span class="p">[[</span><span class="nv">org.clojure/clojure</span> <span class="s">"1.5.1"</span><span class="p">]</span>
+                 <span class="p">[</span><span class="nv">stasis</span> <span class="s">"2.2.1"</span><span class="p">]</span>
+                 <span class="p">[</span><span class="nv">ring</span> <span class="s">"1.3.1"</span><span class="p">]</span>
+                 <span class="p">[</span><span class="nv">hiccup</span> <span class="s">"1.0.5"</span><span class="p">]</span>
+                 <span class="p">[</span><span class="nv">me.raynes/cegdown</span> <span class="s">"0.1.1"</span><span class="p">]]</span>
+  <span class="ss">:ring</span> <span class="p">{</span><span class="ss">:handler</span> <span class="nv">projectcation.web/app</span><span class="p">}</span>
+  <span class="ss">:profiles</span> <span class="p">{</span><span class="ss">:dev</span> <span class="p">{</span><span class="ss">:plugins</span> <span class="p">[[</span><span class="nv">lein-ring</span> <span class="s">"0.8.11"</span><span class="p">]]}})</span>
+</code></pre></div></body></html>
